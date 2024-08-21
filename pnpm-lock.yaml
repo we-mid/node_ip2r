@@ -1,0 +1,38 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      ip2region:
+        specifier: ^2.3.0
+        version: 2.3.0(@types/node@22.3.0)
+
+packages:
+
+  '@types/node@22.3.0':
+    resolution: {integrity: sha512-nrWpWVaDZuaVc5X84xJ0vNrLvomM205oQyLsRt7OHNZbSHslcWsvgFR7O7hire2ZonjLrWBbedmotmIlJDVd6g==}
+
+  ip2region@2.3.0:
+    resolution: {integrity: sha512-zV5Xsadzrx9Ej6heoyhbXMsfGWWQ3C6bAIYStrHhw9kzLpGpVNlnAyRBxxPgxA1GNqr1Ti7oUxcWsMWNN3jZBg==}
+    peerDependencies:
+      '@types/node': '*'
+
+  undici-types@6.18.2:
+    resolution: {integrity: sha512-5ruQbENj95yDYJNS3TvcaxPMshV7aizdv/hWYjGIKoANWKjhWNBsr2YEuYZKodQulB1b8l7ILOuDQep3afowQQ==}
+
+snapshots:
+
+  '@types/node@22.3.0':
+    dependencies:
+      undici-types: 6.18.2
+
+  ip2region@2.3.0(@types/node@22.3.0):
+    dependencies:
+      '@types/node': 22.3.0
+
+  undici-types@6.18.2: {}
